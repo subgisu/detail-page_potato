@@ -4,7 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
-    return {
+    return {export default defineConfig({
+  base: '/detail-page_potato/',
+  // ... 나머지 설정
+}
       server: {
         port: 3000,
         host: '0.0.0.0',
