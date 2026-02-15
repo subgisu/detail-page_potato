@@ -143,8 +143,7 @@ const ProductDetail: React.FC = () => {
                     <p className="text-sm text-stone-500">가을의 정취를 담은 고소한 홍감자</p>
                 </div>
 
-                <div className="bg-white p-4 rounded-xl border border-stone-200 w-full max-w-xs opacity-60">
-                    <div className="flex justify-between items-center mb-2">
+           <div className="bg-white p-4 rounded-xl border border-stone-200 w-full max-w-xs opacity-60 hover:opacity-100 hover:scale-105 hover:bg-amber-100 hover:border-amber-300 transition-all duration-300 cursor-pointer">
                         <span className="font-bold text-stone-700">12월 ~ 5월</span>
                         <span className="bg-stone-400 text-white text-xs px-2 py-0.5 rounded">제주/남부</span>
                     </div>
