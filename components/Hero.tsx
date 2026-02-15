@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
     <section className="relative w-full bg-stone-100 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/hero-potatoes.jpg" 
+          src="/images/hero-potatoes.png" 
           alt="Fresh Potatoes in Soil" 
           className="w-full h-full object-cover opacity-90"
         />
