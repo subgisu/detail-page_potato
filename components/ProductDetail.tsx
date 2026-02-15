@@ -48,7 +48,7 @@ const ProductDetail: React.FC = () => {
                 <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-stone-400"></span>식감이 질기고 단맛이 적음</li>
               </ul>
               <div className="mt-8 flex justify-center">
-                 <img src={`${import.meta.env.BASE_URL}images/recipe-potato-pancake.jpg`} className="rounded-full w-24 h-24 object-cover" alt="Old Potato"/>
+                 <img src={`${import.meta.env.BASE_URL}images/recipe-potato-pancake.jpg`}  className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md" alt="Fresh Potato"/>
               </div>
             </div>
 
