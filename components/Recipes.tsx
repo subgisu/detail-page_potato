@@ -27,7 +27,7 @@ const Recipes: React.FC = () => {
             <div key={idx} className="bg-white text-stone-800 rounded-2xl overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-300">
               <div className="h-48 overflow-hidden bg-gray-200 relative">
                  <img 
-                    src={`${import.meta.env.BASE_URL}images/${['potatocake.png', 'potato_smother.jpg', 'recipe-potato-soup.jpg'][idx]}`}
+                    src={`${import.meta.env.BASE_URL}images/${['potatocake.png', 'potato_smother.jpg', 'potato_soup.jpg'][idx]}`}
                     alt={recipe.imageAlt}
                     className="w-full h-full object-cover"
                  />
