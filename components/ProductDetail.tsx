@@ -49,7 +49,7 @@ const ProductDetail: React.FC = () => {
           분이 많이 나는 최상급 수미감자입니다.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src={`${import.meta.env.BASE_URL}images/potato_first.jpg`} alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}images/potato_first.png`} alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform h-full object-cover" />
           <div className="flex flex-col gap-4">
             <img src={`${import.meta.env.BASE_URL}images/recipe-steamed-potato.jpg`} alt="Harvesting" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center items-center h-full border border-amber-100">
