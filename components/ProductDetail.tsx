@@ -19,7 +19,7 @@ const ProductDetail: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-         <img src={`${import.meta.env.BASE_URL}images/recipe-potato-pancake.jpg`} alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform h-full object-cover" />
+         <img src={`${import.meta.env.BASE_URL}images/potatocake.jpg`} alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform h-full object-cover" />
           <div className="flex flex-col gap-4">
             <img src={`${import.meta.env.BASE_URL}images/recipe-steamed-potato.jpg`} alt="Harvesting" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center items-center h-full border border-amber-100">
