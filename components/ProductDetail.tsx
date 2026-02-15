@@ -13,7 +13,7 @@ const SeasonCards: React.FC = () => {
       {seasons.map((s, i) => (
         <div
           key={i}
-          onClick={() => setActive(i)}
+         onMouseEnter={() => setActive(i)}
           className={`p-4 rounded-xl border w-full max-w-xs transform transition-all duration-300 cursor-pointer ${
             active === i
               ? 'bg-amber-100 border-amber-300 scale-105 opacity-100'
