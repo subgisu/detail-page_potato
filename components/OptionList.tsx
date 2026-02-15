@@ -15,7 +15,7 @@ const OptionList: React.FC = () => {
           {PRODUCT_OPTIONS.map((option) => (
             <div key={option.id} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-stone-200 flex flex-col md:flex-row items-center gap-6">
                <div className="w-full md:w-32 h-32 bg-stone-100 rounded-lg flex-shrink-0 overflow-hidden relative">
-                   <img src="https://picsum.photos/id/113/300/300" className="w-full h-full object-cover" alt="Potato Option" />
+                   <img src={`${import.meta.env.BASE_URL}images/hero-potatoes.png`} className="w-full h-full object-cover" alt="Potato Option" />
                    {option.tag && (
                        <span className="absolute top-0 left-0 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded-br-lg">{option.tag}</span>
                    )}

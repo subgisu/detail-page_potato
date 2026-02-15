@@ -1,30 +1,23 @@
 {
-  "name": "vite-project",
+  "name": "morning-harvest-potatoes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://subgisu.github.io/detail-page_potato",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --repo https://github.com/subgisu/detail-page_potato.git"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
-    "lucide-react": "^0.564.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "lucide-react": "^0.564.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.3.0",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.3"
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }

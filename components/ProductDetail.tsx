@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 const ProductDetail: React.FC = () => {
   return (
@@ -19,9 +19,9 @@ const ProductDetail: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="https://picsum.photos/id/102/600/600" alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
+          <img src={`${import.meta.env.BASE_URL}images/hero-potatoes.png`} alt="Potato Field" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
           <div className="flex flex-col gap-4">
-            <img src="https://picsum.photos/id/113/600/290" alt="Harvesting" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
+            <img src={`${import.meta.env.BASE_URL}images/recipe-steamed-potato.jpg`} alt="Harvesting" className="rounded-lg shadow-md hover:scale-[1.02] transition-transform" />
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col justify-center items-center h-full border border-amber-100">
                 <span className="text-amber-600 font-bold text-lg mb-2">황토밭에서 자란 영양</span>
                 <p className="text-sm text-stone-500">포슬포슬한 식감의 비밀</p>
@@ -48,7 +48,7 @@ const ProductDetail: React.FC = () => {
                 <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-stone-400"></span>식감이 질기고 단맛이 적음</li>
               </ul>
               <div className="mt-8 flex justify-center">
-                 <img src="https://picsum.photos/id/500/150/150" className="rounded-full w-24 h-24 object-cover" alt="Old Potato"/>
+                 <img src={`${import.meta.env.BASE_URL}images/recipe-potato-pancake.jpg`} className="rounded-full w-24 h-24 object-cover" alt="Old Potato"/>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ const ProductDetail: React.FC = () => {
                 </li>
               </ul>
               <div className="mt-8 flex justify-center">
-                 <img src="https://picsum.photos/id/674/150/150" className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md" alt="Fresh Potato"/>
+                 <img src={`${import.meta.env.BASE_URL}images/hero-potatoes.png`} className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md" alt="Fresh Potato"/>
               </div>
             </div>
           </div>
