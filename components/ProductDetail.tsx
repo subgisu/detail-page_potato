@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 
 const ProductDetail: React.FC = () => {
   return (
@@ -94,9 +94,6 @@ const ProductDetail: React.FC = () => {
           </p>
           
           <div className="relative w-full aspect-[4/5] bg-white rounded-3xl shadow-lg overflow-hidden p-8 flex flex-col items-center">
-            {/* Abstract Map Visualization */}
-            <div className="absolute inset-0 opacity-10 bg-[url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/South_Korea_location_map.svg/1200px-South_Korea_location_map.svg.png')] bg-center bg-cover grayscale"></div>
-            
             <div className="z-10 w-full h-full flex flex-col justify-around items-center">
                 <div className="bg-amber-100 p-4 rounded-xl border border-amber-300 w-full max-w-xs transform hover:scale-105 transition-transform duration-300">
                     <div className="flex justify-between items-center mb-2">
