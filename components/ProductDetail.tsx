@@ -1,5 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+const seasons = [
+  { period: '6월 ~ 8월', region: '강원도', regionColor: 'bg-amber-500', desc: '서늘한 고랭지 기후에서 자라 단단하고 저장성이 우수한 수미감자' },
+  { period: '9월 ~ 11월', region: '평창/정선', regionColor: 'bg-stone-400', desc: '가을의 정취를 담은 고소한 홍감자' },
+  { period: '12월 ~ 5월', region: '제주/남부', regionColor: 'bg-stone-400', desc: '따뜻한 해풍을 맞고 자란 겨울 햇감자' },
+];
 
+const SeasonCards: React.FC = () => {
+  const [active, setActive] = useState(0);
+  return (
+    <div className="relative w-full bg-white rounded-3xl shadow-lg overflow-hidden p-8 flex flex-col items-center gap-6">
+      {seasons.map((s, i) => (
+        <div
+          key={i}
+          onClick={() => setActive(i)}
+          className={`p-4 rounded-xl border w-full max-w-xs transform transition-all duration-300 cursor-pointer ${
+            active === i
+              ? 'bg-amber-100 border-amber-300 scale-105 opacity-100'
+              : 'bg-white border-stone-200 opacity-60 hover:opacity-80'
+          }`}
+        >
+          <div className="flex justify-between items-center mb-2">
+            <span className={`font-bold ${active === i ? 'text-amber-900' : 'text-stone-700'}`}>{s.period}</span>
+            <span className={`${active === i ? 'bg-amber-500' : s.regionColor} text-white text-xs px-2 py-0.5 rounded`}>{s.region}</span>
+          </div>
+          <p className={`text-sm ${active === i ? 'text-stone-600' : 'text-stone-500'}`}>{s.desc}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 const ProductDetail: React.FC = () => {
   return (
     <div className="w-full bg-stone-50">
@@ -80,7 +109,7 @@ const ProductDetail: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 3: Seasonality Map */}
+     {/* Section 3: Seasonality Map */}
       <section className="py-24 bg-stone-100">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <div className="inline-block bg-green-700 text-white px-3 py-1 rounded text-xs font-bold mb-4">POINT 01</div>
@@ -93,6 +122,9 @@ const ProductDetail: React.FC = () => {
             가장 맛이 오른 산지를 엄선하여 발송합니다.
           </p>
           
+          <SeasonCards />
+        </div>
+      </section> 
           <div className="relative w-full aspect-[4/5] bg-white rounded-3xl shadow-lg overflow-hidden p-8 flex flex-col items-center">
             <div className="z-10 w-full h-full flex flex-col justify-around items-center">
                 <div className="bg-amber-100 p-4 rounded-xl border border-amber-300 w-full max-w-xs transform hover:scale-105 transition-transform duration-300">
