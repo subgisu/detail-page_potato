@@ -73,7 +73,7 @@ const ProductDetail: React.FC = () => {
                 </li>
               </ul>
               <div className="mt-8 flex justify-center">
-                 <img src={`${import.meta.env.BASE_URL}images/hero-potatoes.png`} className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md" alt="Fresh Potato"/>
+                 <img src={`${import.meta.env.BASE_URL}images/potato-harvest.jpg`} className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-md" alt="Fresh Potato"/>
               </div>
             </div>
           </div>
