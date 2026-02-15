@@ -27,7 +27,7 @@ const Recipes: React.FC = () => {
             <div key={idx} className="bg-white text-stone-800 rounded-2xl overflow-hidden shadow-2xl transform hover:-translate-y-2 transition-transform duration-300">
               <div className="h-48 overflow-hidden bg-gray-200 relative">
                  <img 
-                    src={`https://picsum.photos/seed/${idx + 55}/400/300`} 
+                    src={`${import.meta.env.BASE_URL}images/${['recipe-potato-pancake.jpg', 'recipe-steamed-potato.jpg', 'recipe-potato-soup.jpg'][idx]}`}
                     alt={recipe.imageAlt}
                     className="w-full h-full object-cover"
                  />
